@@ -3,4 +3,4 @@ Hi! this is my alarm clock
 
 ## Demo
 
-See DEMO [here] ()
+See DEMO [here] (https://lauratejada.github.io/alarm-clock/)
