@@ -1,0 +1,119 @@
+@import url(reset.css);
+
+body {
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: rgb(52,66,135);
+    background: radial-gradient(circle, rgb(45, 81, 136) 0%, rgba(4,0,66,1) 100%);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+div {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+div.clock {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 3.5em 1em 3.5em 1em 3.5em;
+    grid-auto-flow: column;
+    place-content: center;
+}
+
+.hour, .minutes, .seconds, .dots {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+div.alarm-time {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+div.set-alarm {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+input {
+    width: calc(40% - 10px);
+    background: rgba(131, 130, 130, 0.8);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color:  rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.2px; 
+    padding: 10px 35px;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+div.invalid-message {
+    padding-top: 10px;
+    color: rgb(240, 0, 0);
+    font-size: 14px;
+    height: 50px;
+}
+
+.invalid-message p {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+button {
+    margin-left: 10px;
+    width: calc(40% - 10px);
+    cursor: pointer;
+    background: rgb(46,46,55);
+    color: #eeeeee;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color:  rgba(83,83,89,0.6);
+    box-shadow: 1px 1px rgb(34, 34, 41);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    padding: 10px 35px;
+}
+
+button:hover {
+    opacity: 0.7; 
+    border-color:  rgba(34, 34, 41,0.9);
+    background: rgb(46,46,55);
+    background: linear-gradient(233deg, rgba(46,46,55,1) 14%, rgba(64,64,72,1) 60%, rgba(83,83,89,1) 100%);
+    box-shadow: inset -2px -2px 5px rgba(34, 34, 41, 0.8), 
+           inset 2px 2px 5px rgba(34, 34, 41, 0.8);
+}
